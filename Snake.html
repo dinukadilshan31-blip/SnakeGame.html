@@ -1,0 +1,35 @@
+<div id="game-container">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    
+    <div id="hud" class="overlay hidden">
+        <div id="leaderboard">
+            <b>Leaderboard</b><br>
+            <div id="lb-content"></div>
+        </div>
+        <div id="minimap-container">
+            <canvas id="minimap" width="80" height="80"></canvas>
+        </div>
+        <div id="controls" class="ui-element">
+            <div class="btn" id="btn-left">↺</div>
+            <div class="btn" id="btn-boost">🚀</div>
+            <div class="btn" id="btn-right">↻</div>
+        </div>
+    </div>
+
+    <div id="main-menu">
+        <h1 style="color: #4CAF50; text-shadow: 2px 2px #000;">🐍 Snake World</h1>
+        <div id="high-score-display">High Score: 0</div>
+        <input type="text" id="player-name" placeholder="Enter Name" maxlength="10" value="Player">
+        <select id="color-select"></select>
+        <button id="btn-play">▶ Play Game</button>
+        <button id="btn-reset" class="reset">⚠ Reset Data</button>
+        <div id="credit">powered by Dinu</div> 
+    </div>
+
+    <div id="game-over-menu" class="hidden">
+        <h1 style="color: #f44336; text-shadow: 2px 2px #000;">Oops!! 💥</h1>
+        <h2>You Died!</h2>
+        <div id="final-score-display" style="font-size: 24px; margin: 10px;">Score: 0</div>
+        <button id="btn-play-again">▶ Play Again</button>
+    </div>
+</div>
